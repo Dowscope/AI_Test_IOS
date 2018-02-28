@@ -15,6 +15,9 @@
 		9303BE85204732B10035061B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9303BE83204732B10035061B /* LaunchScreen.storyboard */; };
 		9303BE90204732B10035061B /* AI_Test_IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303BE8F204732B10035061B /* AI_Test_IOSTests.swift */; };
 		9303BE9B204732B20035061B /* AI_Test_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303BE9A204732B20035061B /* AI_Test_IOSUITests.swift */; };
+		9303BEAA204735770035061B /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303BEA9204735770035061B /* Enemy.swift */; };
+		9303BEAE204735F00035061B /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303BEAD204735F00035061B /* SpriteComponent.swift */; };
+		9303BEB1204739570035061B /* MoveBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303BEB0204739570035061B /* MoveBehaviour.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		9303BE96204732B20035061B /* AI_Test_IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AI_Test_IOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9303BE9A204732B20035061B /* AI_Test_IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI_Test_IOSUITests.swift; sourceTree = "<group>"; };
 		9303BE9C204732B20035061B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9303BEA9204735770035061B /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		9303BEAD204735F00035061B /* SpriteComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteComponent.swift; sourceTree = "<group>"; };
+		9303BEB0204739570035061B /* MoveBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveBehaviour.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 		9303BE73204732B10035061B /* AI_Test_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				9303BEAF204739240035061B /* Behaviours */,
+				9303BEAC204735CA0035061B /* Components */,
+				9303BEAB204735B70035061B /* Entities */,
 				9303BEA8204732BD0035061B /* System */,
 				9303BE7A204732B10035061B /* GameScene.swift */,
 				9303BE7C204732B10035061B /* GameViewController.swift */,
@@ -134,6 +143,30 @@
 				9303BE83204732B10035061B /* LaunchScreen.storyboard */,
 			);
 			path = System;
+			sourceTree = "<group>";
+		};
+		9303BEAB204735B70035061B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				9303BEA9204735770035061B /* Enemy.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		9303BEAC204735CA0035061B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9303BEAD204735F00035061B /* SpriteComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9303BEAF204739240035061B /* Behaviours */ = {
+			isa = PBXGroup;
+			children = (
+				9303BEB0204739570035061B /* MoveBehaviour.swift */,
+			);
+			path = Behaviours;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,8 +303,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9303BEAA204735770035061B /* Enemy.swift in Sources */,
+				9303BEAE204735F00035061B /* SpriteComponent.swift in Sources */,
 				9303BE7B204732B10035061B /* GameScene.swift in Sources */,
 				9303BE7D204732B10035061B /* GameViewController.swift in Sources */,
+				9303BEB1204739570035061B /* MoveBehaviour.swift in Sources */,
 				9303BE75204732B10035061B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
