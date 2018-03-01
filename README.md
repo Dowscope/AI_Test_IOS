@@ -1,5 +1,5 @@
 # AI_Test_IOS
-Working on how AI work on the IOS Platform
+Working on how AI works on the IOS Platform
 
 ## Description
 Created a small iOS app that tests how behaviours work.  There are TWO enemies and ONE player.  Click the screen to move
