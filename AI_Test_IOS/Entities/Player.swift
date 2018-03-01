@@ -1,5 +1,5 @@
 //
-//  Enemy.swift
+//  Player.swift
 //  AI_Test_IOS
 //
 //  Created by Timothy Dowling on 2018-02-28.
@@ -8,15 +8,15 @@
 
 import GameplayKit
 
-class Enemy: GKEntity {
+class Player: GKEntity {
     
     init(position: CGPoint, em: EntityManager){
         super.init()
         
         // Add a sprite to this entity.
         addComponent(SpriteComponent(position: position))
-        addComponent(MoveComponent(maxSpeed: 0.0001, maxAcceleration: 0.001, radius: 32 + 32 * 0.3, em: em))
-        addComponent(TeamComponent(team: .ENEMY))
+        addComponent(MoveComponent(maxSpeed: 0.0001, maxAcceleration: 0.001, radius: 32 * 0.3, em: em))
+        addComponent(TeamComponent(team: .PLAYER))
     }
     
     required init?(coder aDecoder: NSCoder) {

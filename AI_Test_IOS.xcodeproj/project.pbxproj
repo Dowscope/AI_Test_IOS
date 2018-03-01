@@ -18,6 +18,10 @@
 		9303BEAA204735770035061B /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303BEA9204735770035061B /* Enemy.swift */; };
 		9303BEAE204735F00035061B /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303BEAD204735F00035061B /* SpriteComponent.swift */; };
 		9303BEB1204739570035061B /* MoveBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303BEB0204739570035061B /* MoveBehaviour.swift */; };
+		9303BEB3204741340035061B /* MoveComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303BEB2204741340035061B /* MoveComponent.swift */; };
+		9303BEB5204754050035061B /* TeamComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303BEB4204754050035061B /* TeamComponent.swift */; };
+		9303BEB7204782230035061B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303BEB6204782230035061B /* Player.swift */; };
+		9303BEB9204785300035061B /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303BEB8204785300035061B /* EntityManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		9303BEA9204735770035061B /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		9303BEAD204735F00035061B /* SpriteComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteComponent.swift; sourceTree = "<group>"; };
 		9303BEB0204739570035061B /* MoveBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveBehaviour.swift; sourceTree = "<group>"; };
+		9303BEB2204741340035061B /* MoveComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveComponent.swift; sourceTree = "<group>"; };
+		9303BEB4204754050035061B /* TeamComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamComponent.swift; sourceTree = "<group>"; };
+		9303BEB6204782230035061B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		9303BEB8204785300035061B /* EntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				9303BEA9204735770035061B /* Enemy.swift */,
+				9303BEB6204782230035061B /* Player.swift */,
+				9303BEB8204785300035061B /* EntityManager.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -157,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				9303BEAD204735F00035061B /* SpriteComponent.swift */,
+				9303BEB2204741340035061B /* MoveComponent.swift */,
+				9303BEB4204754050035061B /* TeamComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -303,11 +315,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9303BEB9204785300035061B /* EntityManager.swift in Sources */,
+				9303BEB5204754050035061B /* TeamComponent.swift in Sources */,
+				9303BEB3204741340035061B /* MoveComponent.swift in Sources */,
 				9303BEAA204735770035061B /* Enemy.swift in Sources */,
 				9303BEAE204735F00035061B /* SpriteComponent.swift in Sources */,
 				9303BE7B204732B10035061B /* GameScene.swift in Sources */,
 				9303BE7D204732B10035061B /* GameViewController.swift in Sources */,
 				9303BEB1204739570035061B /* MoveBehaviour.swift in Sources */,
+				9303BEB7204782230035061B /* Player.swift in Sources */,
 				9303BE75204732B10035061B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
